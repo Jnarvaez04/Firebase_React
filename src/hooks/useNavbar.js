@@ -1,26 +1,22 @@
-import {close, menu, admin} from "../assets";
-
 
 export const useNavbar = () =>{
     const NAVLINK = [
         {
             id: "home",
-            title: "home",
+            title: "Home",
         },
         {
             id: "usuarios",
-            title: "usuarios",
+            title: "Usuarios",
         },
         {
             id: "productos",
-            title: "productos",
+            title: "Productos",
         }
     ]
 
-
-
     return {
-        NAVLINK
+        NAVLINK,
     }
 
 }

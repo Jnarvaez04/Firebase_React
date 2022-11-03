@@ -1,15 +1,20 @@
-import React from "react";
-import NavbarApp from "./components/Navbar/NavbarApp";
+import { NavbarApp } from './components'
+import styles from '../src/style'
 import { useNavbar } from "./hooks/useNavbar";
 
+const App = () => {
 
-function App() {
-const {NAVLINK} = useNavbar()
+  const {NAVLINK} = useNavbar()
 
   return (
-    <NavbarApp datos={NAVLINK}/>
-  );
-
+    <div className='bg-black-gradient w-full overflow-hidden'>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <NavbarApp datos={NAVLINK}/>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default App;
+export default App
